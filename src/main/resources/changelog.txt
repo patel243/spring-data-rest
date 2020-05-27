@@ -1,6 +1,79 @@
 Spring Data REST Changelog
 ==========================
 
+Changes in version 3.3.0.RELEASE (2020-05-12)
+---------------------------------------------
+* DATAREST-1519 - Remove Travis CI.
+* DATAREST-1516 - Release 3.3 GA (Neumann).
+
+
+Changes in version 3.3.0.RC2 (2020-04-28)
+-----------------------------------------
+* DATAREST-1513 - Avoid recreation of EmbeddedResourcesAssembler in PersistentEntityResourceAssembler.
+* DATAREST-1512 - Upgrade to HAL Explorer 0.12.
+* DATAREST-1509 - Fix Jackson ISO serialization test case to follow standards.
+* DATAREST-1507 - Use JDK 14 for Java.NEXT CI testing.
+* DATAREST-1502 - Use ConcurrentHashMap in PersistentEntitiesResourceMappings instead of ConcurrentReferenceHashMap.
+* DATAREST-1501 - Release 3.3 RC2 (Neumann).
+* DATAREST-1479 - Patch does not work when Lists occur somewhere in path and not at root.
+
+
+Changes in version 3.2.7.RELEASE (2020-04-28)
+---------------------------------------------
+* DATAREST-1513 - Avoid recreation of EmbeddedResourcesAssembler in PersistentEntityResourceAssembler.
+* DATAREST-1509 - Fix Jackson ISO serialization test case to follow standards.
+* DATAREST-1506 - Accidental cache evictions in PersistentEntitiesResourceMappings.
+* DATAREST-1502 - Use ConcurrentHashMap in PersistentEntitiesResourceMappings instead of ConcurrentReferenceHashMap.
+* DATAREST-1498 - Release 3.2.7 (Moore SR7).
+* DATAREST-1479 - Patch does not work when Lists occur somewhere in path and not at root.
+
+
+Changes in version 3.1.17.RELEASE (2020-04-28)
+----------------------------------------------
+* DATAREST-1513 - Avoid recreation of EmbeddedResourcesAssembler in PersistentEntityResourceAssembler.
+* DATAREST-1485 - Release 3.1.17 (Lovelace SR17).
+* DATAREST-1479 - Patch does not work when Lists occur somewhere in path and not at root.
+
+
+Changes in version 3.3.0.RC1 (2020-03-31)
+-----------------------------------------
+* DATAREST-1500 - General code cleanups.
+* DATAREST-1499 - Move to representation model factory methods in Spring HATEOAS.
+* DATAREST-1492 - Release 3.3 RC1 (Neumann).
+* DATAREST-1489 - ConcurrentModificationException in PersistentEntitiesResourceMappings.getMappingFor(…).
+* DATAREST-762 - Pagination links incorrect when using QueryDSL integration.
+
+
+Changes in version 3.2.6.RELEASE (2020-03-25)
+---------------------------------------------
+* DATAREST-1489 - ConcurrentModificationException in PersistentEntitiesResourceMappings.getMappingFor(…).
+* DATAREST-1486 - Release 3.2.6 (Moore SR6).
+
+
+Changes in version 3.3.0.M4 (2020-03-11)
+----------------------------------------
+* DATAREST-1491 - Adapt to Mockito 3.3 changes.
+* DATAREST-1483 - Make spring-data-rest-tests work properly on CI.
+* DATAREST-1482 - Release 3.3 M4 (Neumann).
+* DATAREST-1068 - DomainObjectReader throws UnsupportedOperationException on PATCH request when altering the size of existing Array.
+
+
+Changes in version 3.2.5.RELEASE (2020-02-26)
+---------------------------------------------
+* DATAREST-1483 - Make spring-data-rest-tests work properly on CI.
+* DATAREST-1480 - CI tests need to run integration tests.
+* DATAREST-1474 - Release 3.2.5 (Moore SR5).
+* DATAREST-1068 - DomainObjectReader throws UnsupportedOperationException on PATCH request when altering the size of existing Array.
+
+
+Changes in version 3.1.16.RELEASE (2020-02-26)
+----------------------------------------------
+* DATAREST-1483 - Make spring-data-rest-tests work properly on CI.
+* DATAREST-1480 - CI tests need to run integration tests.
+* DATAREST-1473 - Release 3.1.16 (Lovelace SR16).
+* DATAREST-1068 - DomainObjectReader throws UnsupportedOperationException on PATCH request when altering the size of existing Array.
+
+
 Changes in version 3.3.0.M3 (2020-02-12)
 ----------------------------------------
 * DATAREST-1480 - CI tests need to run integration tests.
@@ -1482,6 +1555,15 @@ Changes in version 2.0.0 M1 (2013-11-21)
     * [DATAREST-170] - Upgrade to dependencies of the Codd release train
     * [DATAREST-185] - Upgrade to Spring 3.2.5
     * [DATAREST-193] - Release 2.0 M1.
+
+
+
+
+
+
+
+
+
 
 
 

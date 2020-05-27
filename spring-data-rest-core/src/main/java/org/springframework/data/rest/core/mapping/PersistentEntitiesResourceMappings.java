@@ -16,7 +16,6 @@
 package org.springframework.data.rest.core.mapping;
 
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
@@ -28,7 +27,6 @@ import org.springframework.data.mapping.PersistentProperty;
 import org.springframework.data.mapping.context.PersistentEntities;
 import org.springframework.data.util.ProxyUtils;
 import org.springframework.util.Assert;
-import org.springframework.util.ConcurrentReferenceHashMap;
 
 /**
  * {@link ResourceMappings} for {@link PersistentEntities}.
@@ -43,8 +41,8 @@ public class PersistentEntitiesResourceMappings implements ResourceMappings {
 			Collections.<MethodResourceMapping> emptyList());
 
 	private final Map<Class<?>, ResourceMetadata> cache = new ConcurrentHashMap<>();
-	private final Map<Class<?>, MappingResourceMetadata> mappingCache = new ConcurrentReferenceHashMap<>();
-	private final Map<PersistentProperty<?>, ResourceMapping> propertyCache = new HashMap<PersistentProperty<?>, ResourceMapping>();
+	private final Map<Class<?>, MappingResourceMetadata> mappingCache = new ConcurrentHashMap<>();
+	private final Map<PersistentProperty<?>, ResourceMapping> propertyCache = new ConcurrentHashMap<>();
 
 	/**
 	 * Creates a new {@link PersistentEntitiesResourceMappings} from the given {@link PersistentEntities}.
@@ -159,7 +157,7 @@ public class PersistentEntitiesResourceMappings implements ResourceMappings {
 	@Override
 	public Iterator<ResourceMetadata> iterator() {
 
-		Set<ResourceMetadata> metadata = new HashSet<ResourceMetadata>();
+		Set<ResourceMetadata> metadata = new HashSet<>();
 
 		for (ResourceMetadata candidate : cache.values()) {
 			if (candidate != null) {
